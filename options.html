@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>📡Your Gemini Brain</title>
+    <style>
+      :root {
+        --primary-color: #4285f4;
+        --primary-dark: #3367d6;
+        --bg-color: #f9fafb;
+        --border-color: #e0e0e0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        width: 100%;
+        max-width: 480px;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      h1 {
+        color: var(--primary-color);
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        transition: border-color 0.3s;
+      }
+
+      input[type="text"]:focus {
+        border-color: var(--primary-color);
+        outline: none;
+      }
+
+      p.small {
+        font-size: 13px;
+        color: #666;
+        margin-top: 8px;
+      }
+
+      a {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-weight: bold;
+        border-radius: 6px;
+        width: 100%;
+        transition: background-color 0.3s;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: var(--primary-dark);
+      }
+
+      .success-message {
+        margin-top: 15px;
+        color: green;
+        text-align: center;
+        font-weight: bold;
+        display: none;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📡 Connect Your Gemini Brain</h1>
+
+      <div class="form-group">
+        <label for="api-key">Gemini API Key</label>
+        <input
+          type="text"
+          id="api-key"
+          placeholder="Enter your Gemini API key"
+        />
+        <p class="small">
+          Get your API key from
+          <a
+            href="https://makersuite.google.com/app/apikey"
+            target="_blank"
+            rel="noopener"
+            >Google AI Studio</a
+          >.
+        </p>
+      </div>
+
+      <button id="save-button">💾 Save Settings</button>
+      <p id="success-message" class="success-message">
+        ✅ Settings saved successfully!
+      </p>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
