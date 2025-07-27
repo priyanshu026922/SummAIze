@@ -25,6 +25,14 @@
 5.Select the cloned folder summAIze
 
 
+## 🧰 Tech Stack
+
+- 🔹 **HTML** – structure for the popup UI
+- 🎨 **CSS** – styling the extension popup
+- ⚙️ **JavaScript** – DOM interaction, Chrome extension logic, API integration
+- 🤖 **Gemini API** – AI model to generate article summaries
+
+
 🔐 API Key Setup
 SummAIze uses the Gemini API to generate summaries. You need to set your API key:
 ![Needs API Key](https://img.shields.io/badge/API%20Key-Required-red?style=for-the-badge&logo=google)
