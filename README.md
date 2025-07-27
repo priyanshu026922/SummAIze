@@ -16,14 +16,14 @@
 
 ## 🛠️ Installation
 
-- Clone or download this repository:
+1. Clone or download this repository:
    ```bash
    git clone https://github.com/priyanshu026922/SummAIze.git
    
--Open Chrome and go to chrome://extensions/
--Enable Developer mode (toggle in top-right)
--Click Load unpacked
--Select the cloned folder summAIze
+2.Open Chrome and go to chrome://extensions/
+3.Enable Developer mode (toggle in top-right)
+4.Click Load unpacked
+5.Select the cloned folder summAIze
 
 
 ## 🧰 Tech Stack
